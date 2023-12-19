@@ -1,0 +1,49 @@
+SELECT*
+FROM CARS;
+
+INSERT INTO CARS(CAR_ID, VIN, MANUFACTURER, COLOR, YEAR, MODEL)
+VALUES(1,"3K096I98581DHSNUP","Volkswagen","Blue","2019","Tiguan");
+
+INSERT INTO CARS(VIN, MANUFACTURER, COLOR, YEAR, MODEL)
+VALUES ("ZM8G7BEUQZ97IH46V", "Peugeot", "Red", "2019", "Rifter"),
+("RKXVNNIHLVVZOUB4M", "Ford", "White", "2018", "Fusion"),
+("HKNDGS7CU31E9Z7JW","Toyota","Silver","2018","RAV4"),
+("DAM41UDN3CHU2WVF6","Volvo","Gray","2019","V60"),
+("DAM41UDN3CHU2WVF6","Volvo","Gray","2019","V60 Cross Country"
+);
+
+SELECT *
+FROM CUSTOMERS;
+
+
+INSERT INTO CUSTOMERS(CUST_ID, NAME, PHONE_NUMBER, EMAIL, CITY, ADDRESS, COUNTRY, STATE, POSTAL_CODE)
+VALUES("10001","Pablo Picasso","+34 636 17 63 82", NULL,"MADRID","Paseo de la Chopera, 14", "Madrid", "SPAIN","28045");
+
+INSERT INTO CUSTOMERS(CUST_ID, NAME, PHONE_NUMBER, EMAIL, CITY, ADDRESS, COUNTRY, STATE, POSTAL_CODE)
+VALUES("20001","Abraham Lincoln","+1 305 907 7086",NULL,"Miami","120 SW 8th St","United States","Florida","33130"),
+("30001","Napoléon Bonaparte","+33 1 79 75 40 00",NULL,"Île-de-France","40 Rue du Colisée","France","Paris","75008");
+
+SELECT *
+FROM SALESPERSONS;
+
+INSERT INTO SALESPERSONS (STAFF_ID, NAME, STORE)
+VALUES ("00001","Petey Cruiser","Madrid");
+
+INSERT INTO SALESPERSONS (STAFF_ID, NAME, STORE)
+VALUES("00002","Anna Sthesia","Barcelona"),
+("00003","Paul Molive","Berlin"),
+("00004","Gail Forcewind ","Paris"),
+("00005","Paige Turner","Mimia"),
+("00006","Bob Frapples","Mexico City"),
+("00007"," Walter Melon","Amsterdam"),
+("00008","Shonda Leer","São Paulo");
+
+SELECT * 
+FROM INVOICES;
+
+INSERT INTO INVOICES (INVOICE_NUM, CAR_ID, CUST_ID, STAFF_ID, DATE)
+VALUES("852399038","1","1","3","2018-08-22");
+
+INSERT INTO INVOICES (INVOICE_NUM, CAR_ID, CUST_ID, STAFF_ID, DATE)
+VALUES("731166526","3","3","5","2018-12-31"),
+("271135104","2","2","7","2019-01-22");
